@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-01 11:21:31 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtTE1RM0lNQko7MjAyMy0wOS0yOTswODoyNDo1NyBBTTsyNjgy"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtTE1RM0lNQko7MjAyMy0xMC0wMTsxMToyMTozMSBQTTszOzI3NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Keterangan" type="String" array="False" size=""/>
+            <declare name="Y" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan angka&quot;" newline="True"/>
+            <input variable="Y"/>
+            <if expression="Y &gt; 3 &amp;&amp; Y&lt;=5">
+                <then>
+                    <assign variable="Keterangan" expression="&quot;Penting! Harus segera dikerjakan&quot;"/>
+                </then>
+                <else>
+                    <if expression="Y&lt;=3 &amp;&amp; Y&gt;=1.5">
+                        <then>
+                            <assign variable="Keterangan" expression="&quot; Tugas ini memiliki prioritas menengah&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="Y&lt;1.5">
+                                <then>
+                                    <assign variable="Keterangan" expression="&quot;Tugas ini relatif ringan, namun jangan tunda terlalu lama&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="Keterangan" expression="&quot;Tugas ini relatif ringan, namun jangan tunda terlalu lama&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="Keterangan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
